@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Stick&display=swap');
 
+body{
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+  }
+
+
 :root{
     /* hue situation lightness alpha */
     --primary-color:hsla(203, 100%, 13%, 1)  ;
@@ -11,31 +21,156 @@
     box-sizing: border-box;
 }
 
-body{
-  font-family: "Source Sans 3", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  padding: 0;
-  margin: 0;
-}
+
 
 
 /* Start Header Session */
 header{
     height: 100vh;
-    background:url(../assets/img/banner/banner2.jpg);
+    background:linear-gradient(30deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../assets/img/banner/banner2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
+    position: relative;
 }
+/* End Header Session */
+
 /* Start Nav Bar */
 .navbar{
     background: linear-gradient(rgba(0,0,0,.3),var(--primary-color));
+    padding: 20px 30px;
+}
+.navmenus{
+    background: linear-gradient(rgba(0,0,0,.3),var(--primary-color));
+    padding: 50px 30px;
+
+
+}
+.menuitems{
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    transition:color .5 ;
+}
+.menuitems:hover{
+    color: skyblue;
+}
+
+.lines1,.lines2,.lines3{
+    width: 25px;
+    height: 3px;
+    margin: 6px;
+
+}
+
+
+.crossxs .lines1{
+    transform: rotate(-45deg) translate(-6px,6px);
+}
+
+.crossxs .lines2{
+    opacity: 0;
+    
+}
+.crossxs .lines3{
+ transform: rotate(45deg) translate(-6px,-6px);
+    
 }
 /* End Nav Bar */
 
+
 /* Start Banner Bar */
+
+.banners{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+}
+
+.bannerheaders{
+    animation-name: bnanis;
+    animation-duration: 2s;
+}
+
+.bannerparagraphs{
+    animation-name: bnanis;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+
+    animation-fill-mode: backwards;
+
+}
+
+@keyframes bnanis {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+    
+}
+
 /* End Banner Bar */
-/* End Header Session */
+
+/* Start About US session */
+.aboutuss{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(./../assets/img/banner/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    position: relative;
+}
+.aboutuss .lines{
+    width: 30%;
+    height:1.3px;
+    background-color: #f4f4f4;
+    margin-bottom: 3px;
+}
+
+.aboutuss .lines:nth-of-type(2){
+    width: 20%;
+    height: 1px;
+}
+
+.aboutuss .lines:nth-of-type(3){
+    width: 10%;
+    height: 0.5px;
+    margin-bottom: 30px;
+}
+.aboutuss h5{
+    background-color: white;
+    color: black;
+    border-left: 5px solid var(--fruit-color);
+    padding:10px;
+}
+
+.aboutuss h5{
+    background-color: white;
+    color: black;
+    border-left: 5px solid var(--fruit-color);
+}
+
+.aboutuss h5 ~ p{
+    margin: 30px 0;
+}
+
+.aboutuss img{
+    width: 350px;
+    position:absolute;
+    bottom: 0;
+}
+/* End About US session */

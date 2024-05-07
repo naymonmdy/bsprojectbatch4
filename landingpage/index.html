@@ -4,7 +4,7 @@
         <title>Plannco Home Decoration</title>
 
         <!-- fav icon  -->
-        <link href="./assets/img/fav/favicon.png" rel="icon" type="image/png" sizes="16*16"  />
+        <link href="./assets/img/fav/favicon.png" rel="icon" type="image/png" sizes="16x16"  />
 
         <!-- bootstrap css1 js1  -->
         <link href="./assets/libs/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
          <!-- jquery ui css1 js1 -->
-         <link href="./assets/libs/jquery-ui-1.13.2/jquery-ui.min.css rel="stylesheet" type="text/css" />
+         <link href="./assets/libs/jquery-ui-1.13.2/jquery-ui.min.css" rel="stylesheet" type="text/css" />
 
          <!-- lightbox2 css1 js1 -->
          <link href="./assets/libs/lightbox2-2.11.4/dist/css/lightbox.min.css" rel="stylesheet" type="text/css" />
@@ -40,18 +40,18 @@
         <header>
             <!-- Start Nav Bar -->
             <nav class="navbar navbar-expand-lg fixed-top">
-                <a href="index.html" class="navbar-brand">
+                <a href="index.html" class="navbar-brand text-light mx-3">
                     <img src="./assets/img/fav/favicon.png" alt="logo" srcset="" width="70">
                     <span class="text-uppercase h2 fw-bold mx-2">PLANCCO <span class="h3">HOME DECORATION</span></span>
                 </a>
 
-                <button type="button">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
+                <button type="button" class="navbar-toggler navbuttons"  data-bs-toggle="collapse" data-bs-target="#nav">
+                    <div class="bg-light lines1"></div>
+                    <div class="bg-light lines2"></div>
+                    <div class="bg-light lines3"></div>
                 </button>
                 
-                <div class="navbar-collapse collapse justify-content-end text-uppercase fw-bold">
+                <div id="nav" class="navbar-collapse collapse justify-content-end text-uppercase fw-bold">
                     <ul class="navbar-nav">
                         <li class="navbar-item"><a href="javascript:void(0)" class="nav-link mx-2 menuitems">Home</a></li>
                         <li class="navbar-item"><a href="javascript:void(0)" class="nav-link mx-2 menuitems">About Us</a></li>
@@ -63,13 +63,42 @@
                     </ul>
                 </div>
             </nav>
+             <!-- End Nav Bar -->
+
+             <!-- Start Banner -->
+                    <div class="text-light text-center text-md-end banners">
+                        <h1 class="display-4 bannerheaders">
+                            Welcome to <span class="display-3 text-uppercase"> Plannco</span>Home Decoration Co.,Ltd
+                        </h1>
+                        <p class="text-lead bannerparagraphs">Lorem ipsum dolor, sit amet consectetur adipisicing elit. . sit amet consectetur</p>
+                    </div>
+             <!-- End Banner -->
         </header>
         <!-- End Header Section  -->
 
-
+       
 
         <!-- Start About Us Section  -->
-        <section>
+        <section class="py-5 aboutuss">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="./assets/img/users/staffgirl1.png" alt="staffgirl1" srcset="">
+                    </div>
+                    <div class="col-sm-6 text-white">
+                        <div class="col-md-12">
+                            <h2 class="text-uppercase">Who we are!!</h2>
+                            <div class="lines"></div>
+                            <div class="lines"></div>
+                            <div class="lines"></div>
+                        </div>
+                        <h5><i>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro laudantium rem totam possimus,</i></h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sint magnam quasi expedita! Ea laboriosam repudiandae quo? Aut quas excepturi reprehenderit minima.</p>
+                        <a href="javascript:void(0);" class="btn btn-danger rounded-0">Read Me</a>
+                    </div>
+                </div>
+
+            </div>
 
         </section>
         <!-- End About Us Section  -->
