@@ -420,10 +420,14 @@ ul.clientslists img {
 
 /* Start Customers Session  */
 .customers{
-    background-image: linear-gradient(
+       background-image: linear-gradient(
         rgba(0,0,0,0),
-        rgba(0,0,0,1),
-    ),url(../assets/img/banner/banner3.jpg);
-}
+        rgba(0,0,0,1)
+       ),url(../assets/img/banner/banner3.jpg);
 
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       background-attachment: fixed;
+}
 /* End Customers Session  */
