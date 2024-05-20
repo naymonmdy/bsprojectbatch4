@@ -72,11 +72,14 @@ $(document).ready(function () {
   });
   //End Adv Section
 
-  // Start Footer Session
-   let getyear=document.getElementById("getyear");
 
+
+  // Start Footer Session
+  
+   let getyear=document.getElementById("getyear");
    let getfullyear=new Date().getFullYear();
    getyear.textContent=getfullyear;
+
   // End Footer Session
 
 
