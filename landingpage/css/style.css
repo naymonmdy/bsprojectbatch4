@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Stick&display=swap');
 
 body {
@@ -295,11 +293,6 @@ header {
 
 
 
-
-
-
-
-
 /* Start Service section */
 
 .services {
@@ -419,15 +412,89 @@ ul.clientslists img {
 /* End Clients section */
 
 /* Start Customers Session  */
-.customers{
-       background-image: linear-gradient(
-        rgba(0,0,0,0),
-        rgba(0,0,0,1)
-       ),url(../assets/img/banner/banner3.jpg);
+.customers {
+    background-image: linear-gradient(rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1)), url(../assets/img/banner/banner3.jpg);
 
-       background-repeat: no-repeat;
-       background-size: cover;
-       background-position: center;
-       background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
 /* End Customers Session  */
+
+
+
+/* Start Quotation Session  */
+.quotes {
+    background-color: var(--primary-color);
+    padding: 30px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: -30px;
+
+}
+
+.phoneicons {
+    width: 30px;
+}
+
+.quotes .infos {
+    display: flex;
+}
+
+.quotes .btn-calls {
+    width: 170px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    color: #f4f4f4;
+    font-size: 15px;
+    border-radius: 100px;
+
+    line-height: 40px;
+    padding: 0;
+    transform: translateY(-1px);
+    transition: all 0.3s;
+}
+
+.quotes .btn-calls:hover {
+    transform: translateY(0px);
+    box-shadow: -3px 3px 3px #444;
+}
+
+/* End Quotatioin Session  */
+
+
+/* Start Furniture Session*/
+.furicons img {
+    width: 70px;
+
+}
+
+.furicons div:nth-of-type(even) {
+    background-color: #f1f1f1;
+}
+
+/* End Furniture Session  */
+
+
+/* Start Contact Session*/
+
+.contacts {
+    background-image: linear-gradient(100deg,
+            rgba(0, 0, 0, 0.9) 50%,
+            rgba(0, 0, 0, 0.5) 30%,
+            transparent 70%),
+        url(../assets/img/banner/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* End Contact Session  */
