@@ -1,4 +1,22 @@
 $(document).ready(function () {
+  // start Back to top
+  $(".btn-backtotops").hide();
+
+  $(window).scroll(function(){
+    let getscrolltop = $(this).scrollTop();
+    // console.log(getscrolltop);
+    if(getscrolltop >=370){
+      $(".btn-backtotops").fadeIn(1000);
+    }
+    else{
+      $(".btn-backtotops").fadeOut(1000);
+
+    }
+
+
+  });
+
+  // End Bakk to top
   // start navbar
   $(window).scroll(function () {
     let getscrolltop = $(this).scrollTop();
@@ -54,4 +72,5 @@ $(document).ready(function () {
     }
   });
   //End Adv Section
+
 });

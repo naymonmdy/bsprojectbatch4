@@ -22,7 +22,23 @@ body {
 }
 
 
+/* Start Back To Top Session */
+.btn-backtotops {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
 
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
+    z-index: 10;
+}
+
+
+
+/* End Back To Top Session */
 
 /* Start Header Session */
 header {
@@ -496,5 +512,67 @@ ul.clientslists img {
     background-attachment: fixed;
 }
 
+.contacts .inputs {
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+    transition: all .8s;
+}
+
+.contacts .inputs:focus {
+    /* outline: none; */
+    box-shadow: none;
+    border-bottom: 2px solid var(--secondary-color);
+
+}
+
+.inputs::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.labels {
+    color: red;
+    display: block;
+
+    margin-top: -60px;
+    margin-left: 15px;
+}
+
+.inputs:placeholder-shown+.labels {
+    opacity: 0;
+}
+
+.submit-btns {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    outline: none;
+
+    transition: all .3s;
+}
+
+.submit-btns:hover {
+    color: white;
+    background-color: var(--primary-color);
+}
 
 /* End Contact Session  */
+/* Start Footer Session  */
+.footerlinks {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+
+    transition: all .3s;
+
+}
+
+.footerlinks:hover {
+    color: orange;
+    letter-spacing: 1px;
+    border-bottom: 1px solid orange;
+}
+
+/* End Footer Session  */
