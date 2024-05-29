@@ -12,6 +12,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    position: relative;
 
     background-color: #f4f4f4;
     font-size: 12px;
@@ -22,6 +23,67 @@ body {
 a {
     text-decoration: none;
 }
+
+/* Start Sidesetting */
+.sitesettings{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    right:10px;
+    opacity: 0.6;
+    bottom:50px;
+
+    line-height: 30px;
+    text-align: center;
+    z-index: 100;
+
+}
+
+.sitesettings:hover{
+    opacity: 1;
+}
+
+/* End Sidesetting */
+
+/* Start Right Navbar */
+.right-panels{
+    width: 200px;
+    height: 80vh;
+    background-color: #999;
+    position:absolute;
+    color:white;
+
+    right:0;
+    top:70px;
+    border-radius: 20px;
+
+    padding: 10px;
+    z-index: 121;
+
+    display: none;
+    transition: display .5 ease-in;
+}
+.right-panels h6{
+    background-color: steelblue;
+    border-radius: 20px;
+    color:white;
+    padding: 10px;
+}
+
+.right-panels .themecolors{
+    column-count: 5;
+}
+
+body.show-nav > .right-panels{
+    display: block;
+}
+/* Start  Right Navbar */
+
+
+
 
 /* Start Navbar */
 /* Start Left Side bar */

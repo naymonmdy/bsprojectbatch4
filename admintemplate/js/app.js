@@ -1,4 +1,10 @@
-
+// Start Right Navbar
+    const getsitesettings =document.getElementById("sitesettings");
+    getsitesettings.addEventListener("click",function()
+    {
+        document.body.classList.toggle("show-nav");
+    });
+// End Right Navbar
     // Start Navbar
         // start top bar
             function dropbtn(e){
@@ -19,4 +25,29 @@ $(document).ready(function(){
             // End left side bar
      // End Navbar
 
-})
+});
+
+// Start Footer 
+
+const getyear=document.getElementById("getyear");
+const getfullyear=new Date().getFullYear();
+getyear.textContent=getfullyear;
+// End Footer 
+
+// start change theme
+
+// let getclass=document.querySelectorAll(".fa-square");
+
+$(document).ready(function(){
+    $(".fa-square").click(function(){
+        
+        if($(this).hasClass("text-primary"))
+        {
+            $("body").toggleClass("bg-primary");
+            $(".wrappers").toggleClass("bg-primary");
+
+        }
+    });
+});
+
+// End change theme
