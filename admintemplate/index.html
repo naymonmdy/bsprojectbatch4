@@ -143,7 +143,7 @@
                                         <div class="input-group">
                                             <input type="text" name="quicksearch" id="quicksearch" class="form-control border-0 shadow-none" placeholder="Search Something..." />
                                             <div class="input-group-append">
-                                                <button type="submit" class="btn btn-primary"> <i class="fas fa-search"></i> </button>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quicksearchmodal"> <i class="fas fa-search"></i> </button>
                                             </div>
                                         </div>
                                     </form>
@@ -552,9 +552,8 @@
                                             <p class="h6 text-muted">Report</p>
                                         </div>
                                     </div>
-
-                                    <div>
-                                        <div>Annimation</div>
+                                    <div class="col-auto">
+                                        <div id="gaugeusers"></div>
                                     </div>
                                 </div>
                             </div>
@@ -572,8 +571,8 @@
                                         </div>
                                     </div>
 
-                                    <div>
-                                        <div>Annimation</div>
+                                    <div class="col-auto">
+                                        <div id="guagecustomers"></div>
                                     </div>
                                 </div>
                             </div>
@@ -591,8 +590,8 @@
                                         </div>
                                     </div>
 
-                                    <div>
-                                        <div>Annimation</div>
+                                    <div class="col-auto">
+                                        <div id="guageemployees"></div>
                                     </div>
                                 </div>
                             </div>
@@ -603,15 +602,15 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col">
-                                            <h6 class="text-xs fw-bold text-primary text-uppercase mb-1">Invester</h6>
+                                            <h6 class="text-xs fw-bold text-primary text-uppercase mb-1">Investers</h6>
                                         </div>
                                         <div class="col-auto">
                                             <p class="h6 text-muted">Report</p>
                                         </div>
                                     </div>
 
-                                    <div>
-                                        <div>Annimation</div>
+                                    <div class="col-auto">
+                                        <div id="guageinvesters"></div>
                                     </div>
                                 </div>
                             </div>
@@ -672,9 +671,9 @@
                                     <h6 class="text-primary">Revenue Sources</h6>
                                 </div>
                                 <div class="card-body">
-                                    <div>
-                                        <p>circle chart</p>
-                                    </div>
+                                    <div style="height: 250px;display: flex;justify-content: center;align-items: center;">
+                                        <canvas id="myChart"></canvas>
+                                      </div>
                                     <div class="small text-center mt-2">
                                         <span><i class="fas fa-circle text-warning"></i>Return Item</span>
                                         <span class="mx-2"><i class="fas fa-circle text-primary"></i></i>>Direct Sales</span>
@@ -712,9 +711,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <div>
-                                        <p>Line Chart</p>
-                                    </div>
+                                    <div id="curve_chart" style="width: 100%"></div>
                                 </div>
                             </div>
                         </div>
@@ -1096,6 +1093,45 @@
     </div>
     <!-- End Right Nabvar -->
 
+
+
+    <!-- Start Model Area -->
+    
+    <div id="quicksearchmodal" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h6 class="modal-title">Result</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="javascrip:void(0);">WDF 1001</a></li>
+                    </ul>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Model Area -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- bootstrap css1 js1  -->
     <!-- <script src="./assets/libs/bootstrap-5.3.2-dist/js/bootstrap.min.js" type="text/javascript"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -1105,6 +1141,16 @@
 
     <!-- jquery ui css1 js1  -->
     <script src="./assets/libs/jquery-ui-1.13.2/jquery-ui.min.js" type="text/javascript"></script>
+
+    <!-- Google chart js1 -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- Chart.js js1 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Raphael must be included before justgage -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.min.js"></script>
 
     <!-- lightbox2 css1 js1  -->
     <script src="./assets/libs/lightbox2-2.11.4/dist/js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
